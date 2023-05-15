@@ -1,0 +1,375 @@
+
+
+@media (max-width: 1920px){
+  #navbarToggleExternalContent {
+    position: fixed;
+    left: 0;
+    top: 8.3vh; 
+    width: fit-content;
+    height: 100vh;
+    z-index: 999;
+    overflow-y: auto;
+    background-color: #FFFFFF !important;
+    transition: width 0s ease-in-out;
+    padding: 10px;
+  }
+  .navbar-toggler {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10000;
+    padding: 3px;
+    color:  #FFFFFF  !important;
+    font-family: "SourceSansPro", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    background-color: #FFFFFF  !important;
+    border: 4px solid #FFFFFF !important;
+    border-radius: 10px;
+  }
+  .navbar-toggler {
+    background-color:  #231f20  !important;
+  }
+ 
+  #logOut{
+    font-family: "SourceSansPro", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.42857;
+      color: #FFFFFF  !important;
+      cursor: pointer;
+      caret-color: transparent;
+      list-style-type: none;
+    
+  }
+  .navbar {
+    width: 100%;
+    height: 50px;
+    padding-left: 2.5%;
+    padding-top: 0px;
+    background-color: #FFFFFF !important;
+    position: fixed;
+    Z-index:999;
+  }
+  .navbar.bg-dark {
+    background-color: #FFFFFF !important;
+    border-bottom: 0.1px solid #231f2056 !important;
+  }
+  .navbar-nav {
+    flex-direction: row;
+    align-items: center;
+    top:0; 
+  }
+  .account{
+   
+    font-family: "SourceSansPro", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.42857;
+      color: #231f20  !important;
+  }
+  img{
+   width: 220px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-right: 50px;
+    
+  }
+  @keyframes imageAnimation {
+    0% { opacity: 0; transform: scale(0.5); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  
+  #ustdellacc {
+    animation: imageAnimation 2s ease-in-out;
+  }
+
+  ul{
+    list-style-type: none;
+  }
+  .bg-dark{
+    font-family: "SourceSansPro", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    background-color: #FFFFFF  !important;
+    border: 4px solid #FFFFFF !important;
+   
+  }
+  .menu{
+    padding-top:10px;
+    padding-left:10px;
+    background-color: #FFFFFF  !important;
+  }
+  .pos-f-t{
+    padding-top: 0px;
+     padding:0px;  
+  }
+  .nav-link.active {
+    font-family: "SourceSansPro", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.42857;
+      color: #231f20  !important;
+      padding:10px;
+      cursor: pointer;
+      caret-color: transparent;
+  }
+  .menuitem{
+    padding-bottom: 10px;
+    font-family: "SourceSansPro", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.42857;
+      color: #231f20  !important;
+      cursor: pointer;
+      caret-color: transparent;
+  }
+ 
+  .settings{
+    color: black;
+    cursor: pointer;
+  }
+  .ust, .tracker {
+    font-family: "SourceSansPro", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    line-height: 1.42857;
+    color: #231f20  !important;
+    padding-left: 10px;
+    caret-color: transparent;
+  }
+  .ust{
+    font-weight: bold;
+  }
+  
+  .bi.bi-caret-down {
+    padding:0;
+  }
+  
+  .menu__item1, .menu__item2 {
+    display:block;
+    cursor: pointer;
+    text-decoration: none;
+    transition-duration: .25s;
+    caret-color: transparent; 
+    padding-bottom: 5px;
+    font-family: "SourceSansPro", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #231f20  !important;
+    cursor: pointer;
+    caret-color: transparent;
+    flex-direction: row;
+    align-items: center;
+    padding:2px;
+  }
+  .userblock{
+    margin-top: 0px;
+    position: fixed;
+    top: 50px;
+    left: 0; 
+    transform: translateX(720%); 
+    width: fit-content;
+    font-family: "SourceSansPro", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    background-color: #FFFFFF  !important;
+    border: 1px solid #231f204d !important;
+  }
+  
+  i{
+     padding-right: 10px; 
+    font-size: 16px;
+    padding-left: 0px;
+  }
+  .bi.bi-gear {
+    padding-right: 0px; 
+  }
+  #usersettings{
+    padding-left: 10px; 
+  }
+
+}
+#navbarToggleExternalContent {
+  position: fixed;
+  left: 0;
+  top: 8.2vh; 
+  width: fit-content;
+  height: 100vh;
+  z-index: 999;
+  overflow-y: auto;
+  background-color: #FFFFFF !important;
+  transition: width 0s ease-in-out;
+  padding: 10px;
+}
+.navbar-toggler {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10000;
+  padding: 3px;
+  color:  #FFFFFF  !important;
+  font-family: "SourceSansPro", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  background-color: #FFFFFF  !important;
+  border: 4px solid #FFFFFF !important;
+  border-radius: 10px;
+}
+.navbar-toggler {
+  background-color:  #231f20  !important;
+}
+
+.navbar {
+  width: 100%;
+  height: 50px;
+  padding-left: 2.5%;
+  padding-top: 0px;
+  background-color: #FFFFFF !important;
+  position: fixed;
+  Z-index:999;
+
+}
+.navbar.bg-dark {
+  background-color: #FFFFFF !important;
+  border-bottom: 0.1px solid #231f2056 !important;
+}
+
+.navbar-nav {
+  flex-direction: row;
+  align-items: center;
+  top:0; 
+}
+.account{
+  padding-right: 10px;
+  font-family: "SourceSansPro", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #231f20  !important;
+    padding:10px;
+}
+
+ul{
+  list-style-type: none;
+}
+.bg-dark{
+  font-family: "SourceSansPro", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  background-color: #FFFFFF  !important;
+  border: 4px solid #FFFFFF !important;
+ 
+}
+.menu{
+  padding-top:10px;
+  padding-left:10px;
+  background-color: #FFFFFF  !important;
+}
+.pos-f-t{
+  padding-top: 0px;
+   padding:0px;  
+}
+.nav-link.active {
+  font-family: "SourceSansPro", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #231f20  !important;
+    padding:10px;
+    cursor: pointer;
+    caret-color: transparent;
+}
+.menuitem{
+  padding-bottom: 10px;
+  font-family: "SourceSansPro", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #231f20  !important;
+    cursor: pointer;
+    caret-color: transparent;
+}
+.settings{
+  color: black;
+  cursor: pointer;
+}
+.ust, .tracker {
+  font-family: "SourceSansPro", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.42857;
+  color: #231f20  !important;
+  padding-left: 10px;
+  caret-color: transparent;
+}
+.ust{
+  font-weight: bold;
+}
+
+.bi.bi-caret-down {
+  padding:0;
+}
+
+.menu__item1, .menu__item2 {
+  display:block;
+  cursor: pointer;
+  text-decoration: none;
+  transition-duration: .25s;
+  caret-color: transparent; 
+  padding-bottom: 5px;
+  font-family: "SourceSansPro", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #231f20  !important;
+  cursor: pointer;
+  caret-color: transparent;
+  flex-direction: row;
+  align-items: center;
+  padding:2px;
+}
+.userblock{
+  margin-top: 0px;
+  position: fixed;
+  top: 50px;
+  left: 0; 
+  transform: translateX(720%); 
+  width: fit-content;
+  font-family: "SourceSansPro", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  background-color: #FFFFFF  !important;
+  border: 1px solid #231f204d !important;
+}
+
+i{
+   padding-right: 10px; 
+  font-size: 16px;
+  padding-left: 0px;
+}
+.bi.bi-gear {
+  padding-right: 0px; 
+}
+#usersettings{
+  padding-left: 10px; 
+}
+
+@media (max-width: 600px) {
+  .navbar,.menu__item1, .menu__item2, .nav-item,  .nav-link.active,  .account,  #navbarToggleExternalContent, .navbar-toggler {
+    display: none;
+  }
+  
+}
+@media (max-width: 1109px) 
+{
+   .navbar-nav, .menu__item1 {
+    display: none;
+    
+  } 
+  .account{
+    text-align: end;
+    position: absolute;
+    right: 0px;
+  }
+  #logOut{
+    display: none;
+  }
+  @media (max-width: 1300px) 
+  {
+  #logOut{
+    display: none;
+  }
+  }
+  
+}

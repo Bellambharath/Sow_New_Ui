@@ -1,0 +1,79 @@
+<div class="pos-f-t" *ngIf="header==true">
+  <nav class="navbar navbar-dark bg-dark">
+
+    <button id="navbartoggler" class="navbar-toggler" (click)="update()" type="button" data-toggle="collapse"
+      data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+      aria-label="Toggle navigation" >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item text-white"><img src="../../assets/icons/DellUSTSOW.png" id="ustdellacc" alt="ustdellacc" />
+      </li>
+      <li class="nav-link active" *ngIf="dashboard" routerLink="/dashboard">Dashboard</li>
+      <li class="nav-link active" *ngIf="sow" routerLink="/sow">So</li>
+      <li class="nav-link active" *ngIf="candidatedetails" routerLink="/candidatedetails">Candidate</li>
+      <li class="nav-link active" *ngIf="mapping" routerLink="/mapping">SO-Candidate Mapping</li>
+      <li class="nav-link active" *ngIf="domain" routerLink="/domain">Domain</li>
+      <li class="nav-link active" *ngIf="technology" routerLink="/technology">Technology</li>
+    </ul>
+
+    <div *ngIf="registration || ChangePW" class="menu__item1">
+      <a (click)="managePassword()">
+        <i class="bi bi-gear"></i><i class="bi bi-caret-down"></i>
+      </a>
+      <div *ngIf="managePw==true" class="userblock">
+        <a *ngIf="registration" class="menu__item2" routerLink="/registration">
+          Registration
+        </a>
+        <a *ngIf="ChangePW" class="menu__item2" routerLink="/changePw">
+          Change Password
+        </a>
+      </div>
+    </div>
+
+    <div class="account">{{Username}}<i class="bi bi-person-circle"></i>
+    </div>
+    <div *ngIf="login" class="btn btn-dark" id="logOut">
+      <li routerLink='/login' routerLink="active" (click)="logOut()">Logout</li>
+    </div>
+  </nav>
+  <div class="collapse" id="navbarToggleExternalContent" >
+    <div class="bg-dark">
+
+      <ul class="menu">
+        <li class="menuitem" *ngIf="dashboard" routerLink="/dashboard" (click)="MenuClose()">
+          <i class="bi bi-speedometer2" (click)="MenuClose()"></i>Dashboard
+        </li>
+        <li class="menuitem" *ngIf="sow" routerLink="/sow">
+          <i class="bi bi-card-list" (click)="MenuClose()"></i>So
+        </li>
+        <li class="menuitem" *ngIf="candidatedetails" routerLink="/candidatedetails" (click)="MenuClose()"><i
+            class="bi bi-person-lines-fill"></i>Candidate</li>
+        <li class="menuitem" *ngIf="mapping" routerLink="/mapping" (click)="MenuClose()"><i
+            class="bi bi-diagram-3"></i>SO-Candidate Mapping</li>
+        <li class="menuitem" *ngIf="domain" routerLink="/domain" (click)="MenuClose()"><i
+            class="bi bi-globe-americas"></i>Domain</li>
+        <li class="menuitem" *ngIf="technology" routerLink="/technology" (click)="MenuClose()"><i
+            class="bi bi-rocket-takeoff"></i>Technology</li>
+
+        <div *ngIf="registration || ChangePW" class="menu__item1">
+          <a (click)="managePassword1()">
+            <i class="bi bi-gear"></i><a id="usersettings">User Settings</a><i class="bi bi-caret-down"></i>
+          </a>
+          <div *ngIf="managePw1==true">
+            <a *ngIf="registration" class="menu__item2" routerLink="/registration">
+              <i class="bi bi-pencil-square" (click)="MenuClose()"></i>Registration
+            </a>
+            <a *ngIf="ChangePW" class="menu__item2" routerLink="/changePw" (click)="MenuClose()">
+              <i class="bi bi-key"></i>Change Password
+            </a>
+          </div>
+        </div>
+        <li *ngIf="login"><a class="menuitem" routerLink='/login'>
+            <i class="bi bi-box-arrow-right"></i>Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
